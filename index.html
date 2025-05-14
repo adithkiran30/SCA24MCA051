@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AVERAGE CALCULATOR MICROSERVICE</title>
+  <style>
+    body {
+      font-family: Arial, serif;
+      margin: 40px;
+    }
+    label, input, button {
+      font-size: 18px;
+      margin: 10px;
+    }
+    .response {
+      margin-top: 25px;
+      padding: 20px;
+      background-color: #721111;
+      border-radius: 5px;
+      width: fit-content;
+    }
+    pre {
+      background: #db2c2c;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+    <script src="index.js"></script>
+  <h1>AVG CALCULATOR MICROSERVICE</h1>
+
+  <label for="numberId">Enter ID of particular number [p, f, e, r]:</label>
+  <input type="text" id="numberId" maxlength="1" />
+  <button onclick="fetchAverage()">Send Request</button>
+
+  <div class="response" id="output" hidden>
+    <h4>Response:</h4>
+    <pre id="responseContent"></pre>
+  </div>
+
+  
+</body>
+</html>
